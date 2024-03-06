@@ -267,7 +267,71 @@ p {
 /* End Hero Section */
 
 /* Services Section */
-#services .services {
+.services {
+    background-color:rgb(7, 213, 240);
+
+}
+
+.main-text {
+    text-align: center;
+	font-size: 50px;
+}
+
+.main-text p {
+    color: var(--second-color);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+	padding: 100px;
+}
+
+.box {
+    background-color: aqua;
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+}
+
+.s-icons i {
+    font-size: 32px;
+    margin-bottom: 20px;
+
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.box p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+/* End Services Section */
+
+#projects .projects {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
@@ -275,63 +339,70 @@ p {
 	padding: 100px 0;
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 }
-#services .service-top {
-	max-width: 500px;
-	margin: 0 auto;
+#projects .projects-header h1 {
+	margin-bottom: 50px;
 }
-#services .service-bottom {
+#projects .all-projects {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
+	flex-direction: column;
 }
-#services .service-item {
-	flex-basis: 80%;
+#projects .project-item {
 	display: flex;
-	align-items: left;
+	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: url(./img/login\ page.png);
-	background-size: cover;
-	margin: 10px 5%;
-	position: relative;
-	z-index: 1;
+	width: 80%;
+	margin: 20px auto;
 	overflow: hidden;
-	height: 10%;
+	border-radius: 10px;
 }
-#services .service-item::after {
+#projects .project-info {
+	padding: 30px;
+	flex-basis: 50%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: transparent;
+	color: white;
+}
+#projects .project-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+}
+#projects .project-info h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	margin-top: 10px;
+}
+#projects .project-info p {
+	color: white;
+}
+#projects .project-img {
+	flex-basis: 50%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#projects .project-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
 	top: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.9;
-	z-index: -1;
+	
+	
 }
-#services .service-bottom .icon {
-	height: 80px;
-	width: 80px;
-	margin-bottom: 20px;
+#projects .project-img img {
+	transition: 0.3s ease transform;
 }
-#services .service-item h2 {
-	font-size: 2rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;
+#projects .project-item:hover .project-img img {
+	transform: scale(1.1);
 }
-#services .service-item p {
-	color: white;
-	text-align: left;
-}
-#services .section-title span{
-	color: rgb(7, 213, 240);
-}
-/* End Services Section */
 
 /* About Section */
 #about .about {
@@ -398,6 +469,7 @@ p {
 	margin: 0 auto;
 	padding: 100px 0;
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+	bottom: 40px;
 	
 	
 }
@@ -418,6 +490,8 @@ p {
 	flex-direction: column;
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
+	position: relative;
+	top: 40px;
 }
 #contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
@@ -439,7 +513,12 @@ p {
 }
 #contact .section-title span{
 	color: rgb(7, 213, 240);
+	
 }
+
+
+
+
 /*End contact Section */
 
 /* Footer */
@@ -482,6 +561,9 @@ p {
 	color: rgb(0, 0, 0);
 	font-size: 1.3rem;
 }
+
+
+
 /* End Footer */
 
 /* Keyframes */
