@@ -59,8 +59,8 @@ p {
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: white;
-	background-color: rgb(7, 213, 240)son;
+	color: rgb(255, 255, 255);
+	background-color: rgba(12, 210, 236, 0.911);
 }
 .brand h1 {
 	font-size: 3rem;
@@ -284,11 +284,16 @@ p {
 }
 
 .main-text h2 {
-	
-    font-size: 4rem;
+	font-family:"Maven Pro", sans-serif;
+	font-weight: 400;
+    font-size: 5.5rem;
     position: relative;
-	top: 30px;
+	top: 65px;
 	
+}
+
+.main-text h2 span{
+	color:  rgb(7, 213, 240);
 }
 
 .main-text h2 p{
@@ -304,11 +309,15 @@ p {
 }
 
 .box {
-    background-image: url(./img/web\ design.png);
+    background-image: url(./img/luxa.org-opacity-changed-web\ design.png);
 	background-position: center;
+	background-size: 400px;
+	z-index: 1;
     padding: 35px 35px;
     border-radius: 8px;
     transition: all .45s ease;
+	position: relative;
+	right: 10px;
 }
 
 .s-icons i {
@@ -321,7 +330,6 @@ p {
     font-size: 60px;
 	text-align: center;
 	position: relative;
-	
     font-weight: 600;
     color: var(--text-color);
     margin-bottom: 15px;
@@ -340,12 +348,16 @@ p {
 }
 
 .box-1 {
-    background-image: url(./img/web-development-1-1.png);
+    background-image: url(./img/luxa.org-opacity-changed-web-development-1-1.png);
 	background-position: center;
+	background-size: 400px;
     padding: 35px 35px;
     border-radius: 8px;
     transition: all .45s ease;
+	position: relative;
+	right: 10px;
 }
+
 
 .s-icons i {
     font-size: 32px;
@@ -538,7 +550,8 @@ p {
 	box-shadow: 0px 0px 18px 0 #0000002c;
 	transition: 0.3s ease box-shadow;
 	position: relative;
-	top: 40px;
+	top: 50px;
+	left: 10px;
 	
 }
 #contact .contact-item:hover {
@@ -800,4 +813,39 @@ p {
 		
 		
 	}
+
+    .box {
+    background-image: url(./img/luxa.org-opacity-changed-web\ design.png);
+	background-position: center;
+    border-radius: 8px;
+    transition: all .45s ease;
+	flex-direction: column;
+		padding: 30px 20px;
+		align-items: center;
+		justify-content: center;
+		
 }
+    
+.box h3 {
+    font-size: 35px;
+	
+}
+
+.box-1 {
+    background-image: url(./img/luxa.org-opacity-changed-web-development-1-1.png);
+	background-position: center;
+    border-radius: 8px;
+    transition: all .45s ease;
+	flex-direction: column;
+		padding: 30px 20px;
+		align-items: center;
+		justify-content: center;
+}
+
+.box-1 h3 {
+    font-size: 35px;
+	
+}
+   
+}
+
