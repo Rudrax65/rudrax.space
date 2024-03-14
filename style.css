@@ -284,9 +284,9 @@ p {
 }
 
 .main-text h2 {
-	font-family:"Maven Pro", sans-serif;
 	font-weight: 400;
     font-size: 5.5rem;
+	color: #000000;
     position: relative;
 	top: 65px;
 	
@@ -309,7 +309,7 @@ p {
 }
 
 .box {
-    background-image: url(./img/luxa.org-opacity-changed-web\ design.png);
+    background-image: url(./img/web\ design.png);
 	background-position: center;
 	background-size: 400px;
 	z-index: 1;
@@ -331,7 +331,9 @@ p {
 	text-align: center;
 	position: relative;
     font-weight: 600;
-    color: var(--text-color);
+	background-image: linear-gradient(90deg, rgba(36,158,168,1) 23%, rgba(0,104,255,1) 46%);
+	-webkit-background-clip: text;
+	color: transparent;
     margin-bottom: 15px;
 }
 
@@ -348,7 +350,7 @@ p {
 }
 
 .box-1 {
-    background-image: url(./img/luxa.org-opacity-changed-web-development-1-1.png);
+    background-image: url(./img/web\ dev.jpeg);
 	background-position: center;
 	background-size: 400px;
     padding: 35px 35px;
@@ -369,9 +371,10 @@ p {
     font-size: 60px;
 	text-align: center;
 	position: relative;
-	
+	background-image: linear-gradient(90deg, rgba(36,158,168,1) 23%, rgba(0,104,255,1) 46%);
+	-webkit-background-clip: text;
+	color: transparent;
     font-weight: 600;
-    color: var(--text-color);
     margin-bottom: 15px;
 }
 
@@ -483,6 +486,7 @@ p {
 }
 #about .col-right h2 {
 	font-size: 2.5rem;
+	color: #000000;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
@@ -521,63 +525,148 @@ p {
 /* End About Section */
 
 /* contact Section */
-#contact .contact {
-	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
+#section-wrapper{
+    width: 100%;
+    padding: 10px;
 	background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-	bottom: 40px;
-	
-	
 }
-#contact .contact-items {
-	 /* max-width: 400px; */
-	width: 100%;
+.box-wrapper{
+    position: relative;
+    display: table;
+    width:1100px;
+    margin:auto;
+    margin-top:35px;
+    border-radius: 30px;
 }
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
-	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
-	position: relative;
-	top: 50px;
-	left: 10px;
-	
+.info-wrap{
+    width:35%;
+    height: 551px;
+    padding: 40px;
+    float: left;
+    display: block;
+    border-radius: 30px 0px 0px 30px;
+    background: transparent;
+    color: #fff;
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+.info-title{
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 0.5px;
 }
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+.info-sub-title{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 17px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
 }
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
+.info-details {
+    list-style: none;
+    margin: 60px 0px;
 }
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
+.info-details li {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #fff;
 }
-#contact .section-title span{
-	color: rgb(7, 213, 240);
-	
+.info-details li i {
+    background: #F44770;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 1px;
 }
-
-
+.info-details li a {
+    color: #fff;
+    text-decoration: none;
+	text-align: right;
+}
+.info-details li a:hover {
+    color: #F44770;
+}
+.social-icons {
+    list-style: none;
+    text-align: left;
+    margin: 20px 0px;
+}
+.social-icons li {
+    display: inline-block;
+}
+.social-icons li i {
+    background: #F44770;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 22%;
+    margin: 0px 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.social-icons li i:hover {
+    background: #fff;
+    color: #000000;
+}
+.form-wrap{
+    width:65%;
+    float: right;
+    padding:40px 25px 35px 25px;
+    border-radius: 0px 30px 30px 0px;
+    background: transparent;
+}
+.form-title{
+    text-align: left;
+    margin-left: 23px;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+}
+.form-fields{
+    display: table;
+    width: 100%;
+    padding: 15px 5px 5px 5px;
+}
+.form-fields input,
+.form-fields textarea{
+    border: none;
+    outline:none;
+    background: none;
+    font-size: 18px;
+    color:#555;
+    padding: 20px 10px 20px 5px;
+    width:100%
+}
+.form-fields textarea{
+    height: 150px;
+    resize: none;
+}
+.form-group{
+    width: 46%;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.form-fields .form-group:last-child {
+    width: 96%;
+}
+.submit-button{
+    width: 96%;
+    height: 60px;
+    margin: 0px 12px;
+    border-radius: 30px;
+    font-size: 20px;;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    cursor: pointer;
+    color:#fff;
+    text-align: center;
+    background: #F44770;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+    transition: .5s;
+}
+.submit-button:hover{
+    background: #31279d;
+}
 
 
 /*End contact Section */
@@ -589,11 +678,12 @@ p {
 #footer .footer {
 	min-height: 200px;
 	flex-direction: column;
-	padding-top: 50px;
+	padding-top: 30px;
 	padding-bottom: 10px;
-	color: aqua;
+	
 	
 }
+
 #footer h2 {
 	color: rgb(0, 0, 0);
 	font-weight: 500;
@@ -602,28 +692,6 @@ p {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-#footer .social-item img {
-	filter: grayscale(0);
-	transition: 0.3s ease filter;
-}
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-#footer p {
-	color: rgb(0, 0, 0);
-	font-size: 1.3rem;
-}
-
-
 
 /* End Footer */
 
@@ -732,37 +800,6 @@ p {
 	/* End About */
 
 	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
 	
       
 	/* End contact  */
@@ -800,8 +837,10 @@ p {
 }
 /* End  Media Query For Desktop */
 
-@media screen and (max-width: 600px) {
+/*   Media Query For MOBILE */
 
+@media screen and (max-width: 600px) {
+     /* HOME */
 	#Home h1 {
 		
 		font-size: 4rem;
@@ -814,8 +853,12 @@ p {
 		
 	}
 
+	/*  END HOME */
+
+	/*  WORK  */
+
     .box {
-    background-image: url(./img/luxa.org-opacity-changed-web\ design.png);
+    background-image: url(./img/web\ design.png);
 	background-position: center;
     border-radius: 8px;
     transition: all .45s ease;
@@ -832,7 +875,7 @@ p {
 }
 
 .box-1 {
-    background-image: url(./img/luxa.org-opacity-changed-web-development-1-1.png);
+    background-image: url(./img/web\ dev.jpeg);
 	background-position: center;
     border-radius: 8px;
     transition: all .45s ease;
@@ -846,6 +889,38 @@ p {
     font-size: 35px;
 	
 }
-   
+
+   /*  END WORK */
+
+   /*  CONTACT  */
+   .box-wrapper{
+	width: 100%;
+}
+.info-wrap,
+.form-wrap{
+	width: 100%;
+	height: inherit;
+	float: none;  
+}
+.info-wrap{
+	border-radius: 30px 30px 0px 0px;
+}
+.form-wrap{
+	border-radius: 0px 0px 30px 30px;
+}
+.form-group{
+	width: 100%;
+	float: none;
+	margin: 25px 0px;
+}
+.form-fields .form-group:last-child, 
+.submit-button{
+	width: 100%;
+}
+.submit-button{
+	margin: 10px 0px;
+}
+   /*  END CONTACT */
 }
 
+/* End  Media Query For MOBILE */
